@@ -1,128 +1,109 @@
-html,
-body {
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.5;
+html {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #4d4e53;
 }
 
-#sidebar {
-  position: fixed;
-  min-width: 290px;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+nav {
+    position: fixed;
+    min-width: 30.4rem;
+    height: 100%;
+    border-right: 3px solid #d6d6d6;
 }
 
-h2 {
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
+nav h1 {
+    font-size: 2.88rem;
+    text-align: center;
+    color: #000;
 }
 
-#documentation h2 {
-  text-align: left;
-  margin: 0px;
+nav ul li {
+    padding: 1rem;
+    border-top: 2px solid #d6d6d6;
 }
 
-#sidebar ul {
-  height: 88%;
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+nav ul a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    color: #4d4e53;
 }
 
-#sidebar li {
-  color: #4d4e53;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
+.content {
+    padding: 4rem;
+    margin-left: 30.4rem;
 }
 
-#sidebar .nav-item {
-  display: block;
-  padding: 10px 30px;
-  color: #4d4e53;
-  text-decoration: none;
-  cursor: pointer;
+.content h2 {
+    margin-left: -1rem;
+    font-size: 2.88rem;
+    margin-bottom: 1.6rem;
+    color: #000;
 }
 
-#documentation {
-  position: absolute;
-  margin-left: 310px;
-  padding: 20px;
-  margin-bottom: 110px;
+.content p,
+.content #editors li,
+.content #formatting table {
+    font-size: 1.536rem;
+    margin-bottom: 2rem;
 }
 
-section article {
-  color: #4d4e53;
-  margin: 15px;
-  font-size: 0.96em;
-}
-
-section li {
-  margin: 15px 0px 0px 20px;
+.content #reference li {
+    font-size: 1.536rem;
 }
 
 pre {
-  display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
-.hscroll {
-  overflow-x: auto;
+.content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
 }
 
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
+pre {
+    text-align: left;
+    white-space: pre-line;
+    background: #f7f7f7;
+    padding: 2rem;
+    font-size: 1.248rem;
 }
 
-@media only screen and (max-width: 815px) {
-  /* For mobile phones: */
-  #sidebar ul {
-    border: 1px solid;
-    height: 207px;
-  }
-
-  #sidebar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
-  }
-
-  #documentation {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
-  }
+.content #editors li {
+    list-style-type: disc;
+    margin-left: 5.6rem;
 }
 
-@media only screen and (max-width: 400px) {
-  #documentation {
-    margin-left: -10px;
-  }
+.content #formatting table td {
+    padding: 0.2rem 0.2rem 0.2rem 0;
+}
+
+.content #reference li a,
+.content #formatting table a {
+    text-decoration: underline;
+}
+
+.content #reference li {
+    list-style-type: disc;
+    margin-left: 5.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: unset;
+        border: none;
+    }
+    nav ul {
+        height: 20rem;
+        overflow: scroll;
+        border: 2px solid #000;
+    }
+    .content {
+        margin-left: 0;
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content {
+        padding: 2rem;
+    }
 }
