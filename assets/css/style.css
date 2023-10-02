@@ -1,109 +1,109 @@
 html {
-    font-family: "Open Sans", Arial, sans-serif;
-    color: #4d4e53;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
 }
 
 nav {
-    position: fixed;
-    min-width: 30.4rem;
-    height: 100%;
-    border-right: 3px solid #d6d6d6;
+  position: fixed;
+  min-width: 30.4rem;
+  height: 100%;
+  border-right: 3px solid #d6d6d6;
 }
 
 nav h1 {
-    font-size: 2.88rem;
-    text-align: center;
-    color: #000;
+  font-size: 2.88rem;
+  text-align: center;
+  color: #000;
 }
 
 nav ul li {
-    padding: 1rem;
-    border-top: 2px solid #d6d6d6;
+  padding: 1rem;
+  border-top: 2px solid #d6d6d6;
 }
 
 nav ul a {
-    font-size: 1.6rem;
-    margin-left: 2rem;
-    color: #4d4e53;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  color: #4d4e53;
 }
 
 .content {
-    padding: 4rem;
-    margin-left: 30.4rem;
+  padding: 4rem;
+  margin-left: 30.4rem;
 }
 
 .content h2 {
-    margin-left: -1rem;
-    font-size: 2.88rem;
-    margin-bottom: 1.6rem;
-    color: #000;
+  margin-left: -1rem;
+  font-size: 2.88rem;
+  margin-bottom: 1.6rem;
+  color: #000;
 }
 
 .content p,
 .content #editors li,
 .content #formatting table {
-    font-size: 1.536rem;
-    margin-bottom: 2rem;
+  font-size: 1.536rem;
+  margin-bottom: 2rem;
 }
 
 .content #reference li {
-    font-size: 1.536rem;
+  font-size: 1.536rem;
 }
 
 pre {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 pre {
-    text-align: left;
-    white-space: pre-line;
-    background: #f7f7f7;
-    padding: 2rem;
-    font-size: 1.248rem;
+  text-align: left;
+  white-space: pre-line;
+  background: #f7f7f7;
+  padding: 2rem;
+  font-size: 1.248rem;
 }
 
 .content #editors li {
-    list-style-type: disc;
-    margin-left: 5.6rem;
+  list-style-type: disc;
+  margin-left: 5.6rem;
 }
 
 .content #formatting table td {
-    padding: 0.2rem 2rem 0.2rem 0;
+  padding: 0.2rem 2rem 0.2rem 0;
 }
 
 .content #reference li a,
 .content #formatting table a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content #reference li {
-    list-style-type: disc;
-    margin-left: 5.6rem;
+  list-style-type: disc;
+  margin-left: 5.6rem;
 }
 
 @media only screen and (max-width: 768px) {
-    nav {
-        position: unset;
-        border: none;
-    }
-    nav ul {
-        height: 20rem;
-        overflow: scroll;
-        border: 2px solid #000;
-    }
-    .content {
-        margin-left: 0;
-        padding: 3rem;
-    }
+  nav {
+    position: unset;
+    border: none;
+  }
+  nav ul {
+    height: 20rem;
+    overflow: scroll;
+    border: 2px solid #000;
+  }
+  .content {
+    margin-left: 0;
+    padding: 3rem;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-    .content {
-        padding: 2rem;
-    }
+  .content {
+    padding: 2rem;
+  }
 }
